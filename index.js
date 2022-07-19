@@ -14,4 +14,4 @@ app.use(express.static('public'))
 
 app.use('/users', UserRoutes)
 
-app.listen(5000)
+app.listen(process.env.PORT || 5000)
